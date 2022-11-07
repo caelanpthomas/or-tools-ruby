@@ -46,6 +46,9 @@ else
   elsif os == "centos" && os_version == "7"
     filename = "or-tools_amd64_centos-7_cpp_v#{version}.tar.gz"
     checksum = "9eaf0178467f4d2fdbe496f62223809aa43e313548cc6cb716e661c00472b4ff"
+  elsif os == "alpine"
+    filename = "or-tools_amd64_alpine-edge_cpp_v#{version}.tar.gz"
+    checksum = "e62bde5242a137ebeb22b417e238c2ffdd0abe299bf47848dea9577c9f63f731"
   else
     platform =
       if Gem.win_platform?
